@@ -1,0 +1,19 @@
+# ide
+.idea/
+.vscode/
+
+# dependencies
+node_modules/
+
+# build
+tsconfig.tsbuildinfo
+lib/
+dist/
+
+# cdk
+cdk.outputs.json
+cdk.out/
+
+# misc
+.DS_Store
+

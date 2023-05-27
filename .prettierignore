@@ -1,0 +1,26 @@
+# misc
+.DS_Store
+.gitignore
+.husky
+.npmrc
+.nvmrc
+
+# ide
+.idea/
+.vscode/
+
+# dependencies
+node_modules/
+
+# build
+tsconfig.tsbuildinfo
+lib/
+dist/
+
+# cdk
+cdk.outputs.json
+cdk.out/
+
+# pnpm
+pnpm-lock.yaml
+pnpm-workspace.yaml

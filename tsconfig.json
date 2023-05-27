@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "lib": ["ES2022"],
+    "module": "ES2022",
+    "moduleResolution": "nodenext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": [],
+  "exclude": ["**/*.config.ts", "**/vitest.setup.ts"],
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/test"
+    }
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
