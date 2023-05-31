@@ -1,6 +1,13 @@
 {
-  "private": true,
   "name": "@apimda/s3-utils",
+  "version": "0.0.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "/dist",
+    "!/**/*.map",
+    "!/**/*.test.*"
+  ],
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
@@ -12,10 +19,16 @@
     "repo-clean": "git clean -xdf",
     "test": "pnpm run build && vitest run"
   },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.188.0",
+    "@aws-sdk/s3-request-presigner": "^3.188.0"
+  },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.115",
     "@types/node": "^18.16.5",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
+    "axios": "^1.4.0",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
@@ -23,8 +36,8 @@
     "prettier": "^2.8.8",
     "prettier-package-json": "^2.8.0",
     "prettier-plugin-organize-imports": "^3.2.2",
+    "testcontainers": "^9.8.0",
     "typescript": "^5.0.4",
-    "undici": "^5.22.0",
     "vitest": "^0.31.0"
   },
   "keywords": [
@@ -36,5 +49,5 @@
     "package.json": "prettier-package-json --write",
     "*.ts": "eslint"
   },
-  "packageManager": "pnpm@8.5.1"
+  "packageManager": "pnpm@8.6.0"
 }

@@ -1,4 +1,4 @@
-import { StorageTestContext } from './packages/test/src/storage-test-context.js';
+import { StorageTestContext } from './src/test/storage-test-context.js';
 
 export async function setup() {
   await StorageTestContext.createGlobal();

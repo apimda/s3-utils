@@ -1,6 +1,6 @@
-import { Storage } from '@apimda/s3-utils-core';
 import axios from 'axios';
 import { expect } from 'vitest';
+import { Storage } from '../storage.js';
 
 export async function storageTest<TKey>(storage: Storage<TKey>, key: TKey) {
   // test to/from S3 key

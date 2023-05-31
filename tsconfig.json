@@ -9,20 +9,15 @@
     "moduleResolution": "nodenext",
     "target": "ES2022",
     "strict": true,
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "files": [],
   "exclude": ["**/*.config.ts", "**/vitest.setup.ts"],
-  "references": [
-    {
-      "path": "./packages/core"
-    },
-    {
-      "path": "./packages/test"
-    }
-  ],
+  "include": ["./src/**/*"],
   "ts-node": {
     "esm": true
   }

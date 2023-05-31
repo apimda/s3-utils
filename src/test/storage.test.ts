@@ -1,7 +1,7 @@
-import { KeyConverter, Storage } from '@apimda/s3-utils-core';
 import { S3Client } from '@aws-sdk/client-s3';
 import { randomUUID } from 'node:crypto';
 import { afterAll, beforeAll, beforeEach, describe, test } from 'vitest';
+import { KeyConverter, Storage } from '../storage.js';
 import { StorageTestContext } from './storage-test-context.js';
 import { storageTest } from './storage-test-utils.js';
 
