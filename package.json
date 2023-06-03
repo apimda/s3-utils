@@ -2,6 +2,16 @@
   "name": "@apimda/s3-utils",
   "version": "0.0.3",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./test": {
+      "types": "./dist/test/index.d.ts",
+      "default": "./dist/test/index.js"
+    }
+  },
   "main": "dist/index.js",
   "files": [
     "/dist",
@@ -23,6 +33,14 @@
     "@aws-sdk/client-s3": "^3.188.0",
     "@aws-sdk/s3-request-presigner": "^3.188.0"
   },
+  "peerDependencies": {
+    "testcontainers": "^9.8.0"
+  },
+  "peerDependenciesMeta": {
+    "testcontainers": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.115",
     "@types/node": "^18.16.5",
@@ -36,7 +54,6 @@
     "prettier": "^2.8.8",
     "prettier-package-json": "^2.8.0",
     "prettier-plugin-organize-imports": "^3.2.2",
-    "testcontainers": "^9.8.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
   },
